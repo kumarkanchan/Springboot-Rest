@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "dedb2aa0-743d-48b7-881e-0f6ad2cc07e1",
+		"name": "Springboot-Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2567157"
+	},
+	"item": [
+		{
+			"name": "delete - courseById - JPA",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9095/courses/111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"courses",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update - courseById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"courseId\": 111,\r\n        \"title\": \"DS-A\",\r\n        \"description\": \"This is DS-A Book Using for DATA STRUCTURE AND ALGORITHM\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9095/courses/111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"courses",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add - courseById JPA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseId\": 999,\r\n    \"title\": \"JPA\",\r\n    \"description\": \"This is JPA Book Using for JAVA PERSISTENCE API\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9095/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get - courses - JPA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseId\": 999,\r\n    \"title\": \"JPA\",\r\n    \"description\": \"This is JPA Book Using for JAVA PERSISTENCE API\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9095/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -12,7 +12,7 @@ public interface CourseService {
 
     public Courses addCourses(Courses course);
 
-    public Courses deleteCourses(Long courseId);
+    public void deleteCourses(Long courseId);
 
     public Courses updateCourses(Courses course, Long courseId);
 
